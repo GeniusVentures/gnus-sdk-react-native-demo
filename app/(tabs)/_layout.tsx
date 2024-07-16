@@ -3,10 +3,6 @@ import React from "react";
 import { Image } from "react-native";
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
-import { RootStackParamList } from "../../types";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
-const Tab = createBottomTabNavigator<RootStackParamList>();
 
 export default function TabLayout() {
   return (
@@ -42,7 +38,7 @@ export default function TabLayout() {
               source={require("@/assets/images/gnus-icon-white.png")}
               style={{
                 width: 24,
-                height: 24,
+                height: 28,
                 tintColor: color,
               }}
             />

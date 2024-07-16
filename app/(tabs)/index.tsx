@@ -48,7 +48,7 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Start Building</ThemedText>
+        <ThemedText type="subtitle">Step 3: Start Building</ThemedText>
         <ThemedText>
           When you're ready to get started, you can either use this app as a
           base, or you can impliment the GNUS SDK in your own application.
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     borderColor: "rgba(0, 0, 0, 0.05)",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
+    marginTop: 10,
     marginHorizontal: "auto",
   },
   gradient: {

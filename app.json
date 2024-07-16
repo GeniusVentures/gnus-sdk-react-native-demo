@@ -13,7 +13,10 @@
       "backgroundColor": "#05090F"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch"]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,6 +24,7 @@
         "backgroundColor": "#05090F"
       },
       "package": "GNUS.AI Node.js SDK Demo",
+      "permissions": ["RECEIVE_BOOT_COMPLETED", "FOREGROUND_SERVICE"],
       "plugins": ["react-native-linear-gradient"]
     },
     "web": {
