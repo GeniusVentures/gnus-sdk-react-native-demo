@@ -1,19 +1,22 @@
-// navigation/types.ts
-import {NavigatorScreenParams} from '@react-navigation/native';
+import {RouteProp} from '@react-navigation/native';
+import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 
-export type RootStackParamList = {
+// Define your tab navigator's parameter list
+export type TabParamList = {
   Home: undefined;
-  Details: {itemId: number};
+  MoreInfo: undefined;
 };
 
-export type BottomTabParamList = {
-  Feed: undefined;
-  Profile: undefined;
-};
+// Define navigation prop types for each screen
+export type HomeScreenNavigationProp = BottomTabNavigationProp<
+  TabParamList,
+  'Home'
+>;
+export type MoreInfoScreenNavigationProp = BottomTabNavigationProp<
+  TabParamList,
+  'MoreInfo'
+>;
 
-// Optionally, extend the default types if needed
-declare global {
-  namespace ReactNavigation {
-    interface RootParamList extends RootStackParamList {}
-  }
-}
+// Define route prop types for each screen
+export type HomeScreenRouteProp = RouteProp<TabParamList, 'Home'>;
+export type MoreInfoScreenRouteProp = RouteProp<TabParamList, 'MoreInfo'>;

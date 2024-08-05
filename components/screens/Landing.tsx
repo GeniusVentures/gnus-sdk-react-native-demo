@@ -12,11 +12,13 @@ import {ThemedText} from '../templates/ThemedText';
 import {ThemedView} from '../templates/ThemedView';
 import {useNavigation} from '@react-navigation/native';
 import LinearGradient from 'react-native-linear-gradient';
+import {HomeScreenNavigationProp} from '../../navigation/types';
+
 export default function HomeScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
   const handlePress = () => {
-    navigation.navigate('moreInfo');
+    navigation.navigate('MoreInfo');
   };
 
   return (
