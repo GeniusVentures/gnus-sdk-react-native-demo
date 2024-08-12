@@ -2,6 +2,7 @@
 import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './navigation/TabNavigator';
+// import {initGnus} from '../TSWrappedGeniusSDK/dist/index';
 import {initGnus} from 'ts-wrapped-genius-sdk';
 
 export default function App() {
