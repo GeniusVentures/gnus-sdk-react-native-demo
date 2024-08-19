@@ -7,6 +7,7 @@ import {initGnus} from 'ts-wrapped-genius-sdk';
 
 export default function App() {
   useEffect(() => {
+    console.log('should start sdk');
     initGnus();
     // processGnus('QmUDMvGQXbUKMsjmTzjf4ZuMx7tHx6Z4x8YH8RbwrgyGAf', 1);
   }, []);
